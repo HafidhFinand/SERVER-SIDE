@@ -15,15 +15,16 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.20",
     "supertest": "^4.0.2",
-    "validator": "^13.1.1"
+    "validator": "^13.1.1",
+    "dotenv": "^8.2.0"
   },
   "devDependencies": {
-    "@shelf/jest-mongodb": "^1.1.5",
-    "dotenv": "^8.2.0"
+    "@shelf/jest-mongodb": "^1.1.5"
   },
   "scripts": {
     "test": "jest --detectOpenHandles --verbose --forceExit --coverage",
-    "dev": "nodemon bin/server.js"
+    "dev": "nodemon bin/server.js",
+    "start": "node bin/server.js"
   },
   "keywords": [],
   "author": "",

@@ -1,7 +1,10 @@
 const mongoose = require("mongoose")
 const Documentation = require("../model/Documentation")
 
-mongoose.connect("mongodb://localhost:27017/adeps", { useNewUrlParser: true })
+mongoose.connect(
+  `mongodb+srv://elixir-fox:2291403Xx!@hinata.zgsl0.gcp.mongodb.net/adeps?retryWrites=true&w=majority`,
+  { useNewUrlParser: true }
+)
 
 const code = `
   var mongoose = require('mongoose');
